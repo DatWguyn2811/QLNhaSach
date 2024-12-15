@@ -8,12 +8,12 @@ package com.mycompany.quanlinhasach.view;
  *
  * @author TienDat
  */
-public class PopUpThemNhanVien extends javax.swing.JDialog {
+public class PopUpSuaNhanVien extends javax.swing.JDialog {
 
     /**
      * Creates new form PopUpThemNhanVien
      */
-    public PopUpThemNhanVien() {
+    public PopUpSuaNhanVien() {
         initComponents();
     }
 
@@ -26,8 +26,8 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        addUserPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        updateUserPanel = new javax.swing.JPanel();
+        updateTitleLabel = new javax.swing.JLabel();
         userInfoPanel = new javax.swing.JPanel();
         userInfoTitleLabel = new javax.swing.JLabel();
         userNameInputPanel = new javax.swing.JPanel();
@@ -66,17 +66,17 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
         userPasswordLabel = new javax.swing.JLabel();
         userPasswordField = new javax.swing.JPasswordField();
         btnPanel = new javax.swing.JPanel();
-        addBtn = new javax.swing.JButton();
+        updateBtn = new javax.swing.JButton();
         cancelBtn = new javax.swing.JButton();
 
         setTitle("Thêm nhân viên");
 
-        addUserPanel.setBackground(new java.awt.Color(255, 255, 255));
-        addUserPanel.setPreferredSize(new java.awt.Dimension(810, 671));
+        updateUserPanel.setBackground(new java.awt.Color(255, 255, 255));
+        updateUserPanel.setPreferredSize(new java.awt.Dimension(810, 671));
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(132, 94, 194));
-        jLabel1.setText("Thêm nhân viên");
+        updateTitleLabel.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        updateTitleLabel.setForeground(new java.awt.Color(132, 94, 194));
+        updateTitleLabel.setText("Sửa nhân viên");
 
         userInfoPanel.setBackground(new java.awt.Color(255, 255, 255));
         userInfoPanel.setPreferredSize(new java.awt.Dimension(762, 356));
@@ -493,11 +493,11 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
         btnPanel.setBackground(new java.awt.Color(255, 255, 255));
         btnPanel.setPreferredSize(new java.awt.Dimension(762, 34));
 
-        addBtn.setBackground(new java.awt.Color(0, 201, 167));
-        addBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
-        addBtn.setForeground(new java.awt.Color(255, 255, 255));
-        addBtn.setText("Thêm");
-        addBtn.setPreferredSize(new java.awt.Dimension(80, 34));
+        updateBtn.setBackground(new java.awt.Color(0, 201, 167));
+        updateBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        updateBtn.setForeground(new java.awt.Color(255, 255, 255));
+        updateBtn.setText("Cập nhật");
+        updateBtn.setPreferredSize(new java.awt.Dimension(80, 34));
 
         cancelBtn.setBackground(new java.awt.Color(0, 201, 167));
         cancelBtn.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
@@ -515,10 +515,10 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
         btnPanelLayout.setHorizontalGroup(
             btnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPanelLayout.createSequentialGroup()
-                .addContainerGap(602, Short.MAX_VALUE)
+                .addContainerGap(590, Short.MAX_VALUE)
                 .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(addBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0))
         );
         btnPanelLayout.setVerticalGroup(
@@ -526,28 +526,28 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPanelLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(btnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        javax.swing.GroupLayout addUserPanelLayout = new javax.swing.GroupLayout(addUserPanel);
-        addUserPanel.setLayout(addUserPanelLayout);
-        addUserPanelLayout.setHorizontalGroup(
-            addUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(addUserPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout updateUserPanelLayout = new javax.swing.GroupLayout(updateUserPanel);
+        updateUserPanel.setLayout(updateUserPanelLayout);
+        updateUserPanelLayout.setHorizontalGroup(
+            updateUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(updateUserPanelLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addGroup(addUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(updateUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(userAccountPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
+                    .addComponent(updateTitleLabel)
                     .addComponent(userInfoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
-        addUserPanelLayout.setVerticalGroup(
-            addUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(addUserPanelLayout.createSequentialGroup()
+        updateUserPanelLayout.setVerticalGroup(
+            updateUserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(updateUserPanelLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel1)
+                .addComponent(updateTitleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(userInfoPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
@@ -561,14 +561,14 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(addUserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(updateUserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(addUserPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(updateUserPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        addUserPanel.getAccessibleContext().setAccessibleDescription("");
+        updateUserPanel.getAccessibleContext().setAccessibleDescription("");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -622,27 +622,26 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PopUpThemNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PopUpSuaNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PopUpThemNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PopUpSuaNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PopUpThemNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PopUpSuaNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PopUpThemNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PopUpSuaNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PopUpThemNhanVien().setVisible(true);
+                new PopUpSuaNhanVien().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addBtn;
-    private javax.swing.JPanel addUserPanel;
     private javax.swing.JPanel birthdateInputPanel;
     private javax.swing.JLabel birthdateLabel;
     private javax.swing.JTextField birthdateTxtField;
@@ -654,7 +653,6 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> genderComboBox;
     private javax.swing.JPanel genderInputPanel;
     private javax.swing.JLabel genderLabel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel passwordInputPanel;
     private javax.swing.JPanel phoneNumberInputPanel;
     private javax.swing.JLabel phoneNumberLabel;
@@ -671,6 +669,9 @@ public class PopUpThemNhanVien extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> statusComboBox;
     private javax.swing.JPanel statusInputPanel;
     private javax.swing.JLabel statusLabel;
+    private javax.swing.JButton updateBtn;
+    private javax.swing.JLabel updateTitleLabel;
+    private javax.swing.JPanel updateUserPanel;
     private javax.swing.JLabel userAccountLabel;
     private javax.swing.JPanel userAccountPanel;
     private javax.swing.JLabel userAccountTitleLabel;

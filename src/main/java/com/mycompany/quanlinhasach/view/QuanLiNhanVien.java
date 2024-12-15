@@ -43,7 +43,6 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
         nhanVienTable = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1080, 768));
         setResizable(false);
 
         headerPanel.setBackground(new java.awt.Color(132, 94, 194));
@@ -70,9 +69,9 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
         userHeaderPanelLayout.setHorizontalGroup(
             userHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userHeaderPanelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(userNameLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(5, 5, 5)
                 .addComponent(userIconLabel)
                 .addGap(0, 0, 0))
         );
@@ -96,7 +95,7 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addComponent(menuIconLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(userHeaderPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 953, Short.MAX_VALUE)
+                .addComponent(userHeaderPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1001, Short.MAX_VALUE)
                 .addGap(24, 24, 24))
         );
         headerPanelLayout.setVerticalGroup(
