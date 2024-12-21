@@ -2,19 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package DAO;
+package com.mycompany.quanlinhasach.dao;
 
 /**
  *
  * @author NGUYEN MY NGAN
  */
-import database.DatabaseConnection;
+import com.mycompany.quanlinhasach.database.JDBCUtil;
+import com.mycompany.quanlinhasach.model.Sach;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import model.Sach;
+
 
 public class SachDAO {
     private Connection connection;
@@ -24,7 +25,7 @@ public class SachDAO {
     }
     public String layTenTacGia(String tenSach) {
         String tacGia = null;
-        try (Connection conn = DatabaseConnection.getConnection()) {
+        try (Connection conn = JDBCUtil.getConnection()) {
             // Truy vấn lấy tên tác giả dựa vào tên đầu sách
             String sql = "SELECT t.TenTacGia " +
                          "FROM DAUSACH d " +
@@ -44,7 +45,7 @@ public class SachDAO {
     }
     public String layTenTheLoai(String tenSach) {
         String tenTheLoai = null;
-        try (Connection conn = DatabaseConnection.getConnection()) {
+        try (Connection conn = JDBCUtil.getConnection()) {
             // SQL query để lấy tên thể loại
             String sql = "SELECT t.TenTheLoai " +
                          "FROM THELOAI t " +
@@ -65,7 +66,7 @@ public class SachDAO {
     public int layMaNhaXuatBan(String nhaXuatBan) {
         int maNhaXuatBan = -1; // Giả sử giá trị -1 là không tìm thấy
 
-        try (Connection conn = DatabaseConnection.getConnection()) {
+        try (Connection conn = JDBCUtil.getConnection()) {
             String query = "SELECT MaNhaXuatBan FROM NXB WHERE TenNhaXuatBan = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, nhaXuatBan);
@@ -86,7 +87,7 @@ public class SachDAO {
 
     // Kiểm tra xem sách có tồn tại trong cơ sở dữ liệu không
     public boolean kiemTraSachTonTai(String tenSach, String nhaXuatBan, int namXuatBan) {
-        try (Connection conn = DatabaseConnection.getConnection()) {
+        try (Connection conn = JDBCUtil.getConnection()) {
             String sql = "SELECT COUNT(*) FROM SACH s " +
                          "JOIN DAUSACH d ON s.MaDauSach = d.MaDauSach " +
                          "JOIN NXB n ON s.MaNhaXuatBan = n.MaNhaXuatBan " +
@@ -110,7 +111,7 @@ public class SachDAO {
     // Bỏ qua MaSach vì nó sẽ tự động tăng trong CSDL
         String sql = "INSERT INTO SACH (MaDauSach, DonGia, SoLuong, NamXuatBan, MaNhaXuatBan) VALUES (?, ?, ?, ?, ?)";
 
-        try (Connection conn = DatabaseConnection.getConnection();
+        try (Connection conn = JDBCUtil.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             for (Sach sach : danhSachSach) {

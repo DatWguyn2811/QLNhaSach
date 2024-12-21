@@ -2,16 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controller;
+package com.mycompany.quanlinhasach.controller;
 
-import dao.NhaXuatBanDAO;
-import model.NhaXuatBan;
+import com.mycompany.quanlinhasach.dao.NhaXuatBanDAO;
+import com.mycompany.quanlinhasach.model.NhaXuatBan;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
-import view.SanPham;
+import com.mycompany.quanlinhasach.view.SanPham;
 
 
 

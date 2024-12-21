@@ -2,18 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controller;
+package com.mycompany.quanlinhasach.controller;
 
 /**
  *
  * @author NGUYEN MY NGAN
  */
-import DAO.SachDAO;
+import com.mycompany.quanlinhasach.dao.SachDAO;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import model.Sach;
+import com.mycompany.quanlinhasach.model.Sach;
 
 public class SachController {
     private SachDAO sachDAO;

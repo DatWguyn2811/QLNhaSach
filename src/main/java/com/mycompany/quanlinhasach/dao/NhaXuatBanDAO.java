@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package dao;
+package com.mycompany.quanlinhasach.dao;
 
-import model.NhaXuatBan;
+import com.mycompany.quanlinhasach.model.NhaXuatBan;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

@@ -2,16 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package DAO;
+package com.mycompany.quanlinhasach.dao;
 
 /**
  *
  * @author NGUYEN MY NGAN
  */
+import com.mycompany.quanlinhasach.model.DauSach;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import model.DauSach;
 
 public class DauSachDAO {
     private Connection connection;
