@@ -1,22 +1,33 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 package com.mycompany.quanlinhasach.view;
 
+import com.toedter.calendar.JDateChooser;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
+import javax.swing.JFormattedTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 /**
  *
  * @author TienDat
  */
-public class QuanLiNhanVien extends javax.swing.JFrame {
-
+public class QuanLiNhanVien extends javax.swing.JPanel {
     /**
-     * Creates new form QuanLiNhanVien
+     * Creates new form QuanLiNhanVien1
      */
     public QuanLiNhanVien() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,175 +37,1075 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        headerPanel = new javax.swing.JPanel();
-        menuIconLabel = new javax.swing.JLabel();
-        userHeaderPanel = new javax.swing.JPanel();
-        userIconLabel = new javax.swing.JLabel();
+        SuaNhanVienDialog = new javax.swing.JDialog();
+        updateUserPanel = new javax.swing.JPanel();
+        updateTitleLabel = new javax.swing.JLabel();
+        userInfoPanel = new javax.swing.JPanel();
+        userInfoTitleLabel = new javax.swing.JLabel();
+        userNameInputPanel = new javax.swing.JPanel();
         userNameLabel = new javax.swing.JLabel();
+        userNameTxtField = new javax.swing.JTextField();
+        salaryInputPanel = new javax.swing.JPanel();
+        salaryLabel = new javax.swing.JLabel();
+        salaryTxtField = new javax.swing.JFormattedTextField();
+        emailInputPanel = new javax.swing.JPanel();
+        emailLabel = new javax.swing.JLabel();
+        emailTxtField = new javax.swing.JTextField();
+        genderInputPanel = new javax.swing.JPanel();
+        genderLabel = new javax.swing.JLabel();
+        genderComboBox = new javax.swing.JComboBox<>();
+        birthdateInputPanel = new javax.swing.JPanel();
+        birthdateLabel = new javax.swing.JLabel();
+        jDateChooser3 = new com.toedter.calendar.JDateChooser();
+        startingDateInputPanel = new javax.swing.JPanel();
+        startingDateLabel = new javax.swing.JLabel();
+        jDateChooser4 = new com.toedter.calendar.JDateChooser();
+        positionInputPanel = new javax.swing.JPanel();
+        positionLabel = new javax.swing.JLabel();
+        positionComboBox = new javax.swing.JComboBox<>();
+        statusInputPanel = new javax.swing.JPanel();
+        statusLabel = new javax.swing.JLabel();
+        statusComboBox = new javax.swing.JComboBox<>();
+        phoneNumberInputPanel = new javax.swing.JPanel();
+        phoneNumberLabel = new javax.swing.JLabel();
+        phoneNumberTxtField = new javax.swing.JTextField();
+        userAccountPanel = new javax.swing.JPanel();
+        userAccountTitleLabel = new javax.swing.JLabel();
+        userAcountInputPanel = new javax.swing.JPanel();
+        userAccountLabel = new javax.swing.JLabel();
+        userAccountTxtField = new javax.swing.JTextField();
+        passwordInputPanel = new javax.swing.JPanel();
+        userPasswordLabel = new javax.swing.JLabel();
+        userPasswordField = new javax.swing.JPasswordField();
+        btnPanel = new javax.swing.JPanel();
+        updateBtn = new javax.swing.JButton();
+        cancelBtn = new javax.swing.JButton();
+        ThemNhanVienDialog = new javax.swing.JDialog();
+        addUserPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        userInfoPanel1 = new javax.swing.JPanel();
+        userInfoTitleLabel1 = new javax.swing.JLabel();
+        userNameInputPanel1 = new javax.swing.JPanel();
+        userNameLabel1 = new javax.swing.JLabel();
+        userNameTxtField1 = new javax.swing.JTextField();
+        salaryInputPanel1 = new javax.swing.JPanel();
+        salaryLabel1 = new javax.swing.JLabel();
+        salaryTxtField1 = new javax.swing.JFormattedTextField();
+        emailInputPanel1 = new javax.swing.JPanel();
+        emailLabel1 = new javax.swing.JLabel();
+        emailTxtField1 = new javax.swing.JTextField();
+        genderInputPanel1 = new javax.swing.JPanel();
+        genderLabel1 = new javax.swing.JLabel();
+        genderComboBox1 = new javax.swing.JComboBox<>();
+        birthdateInputPanel1 = new javax.swing.JPanel();
+        birthdateLabel1 = new javax.swing.JLabel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        startingDateInputPanel1 = new javax.swing.JPanel();
+        startingDateLabel1 = new javax.swing.JLabel();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        positionInputPanel1 = new javax.swing.JPanel();
+        positionLabel1 = new javax.swing.JLabel();
+        positionComboBox1 = new javax.swing.JComboBox<>();
+        statusInputPanel1 = new javax.swing.JPanel();
+        statusLabel1 = new javax.swing.JLabel();
+        statusComboBox1 = new javax.swing.JComboBox<>();
+        phoneNumberInputPanel1 = new javax.swing.JPanel();
+        phoneNumberLabel1 = new javax.swing.JLabel();
+        phoneNumberTxtField1 = new javax.swing.JTextField();
+        userAccountPanel1 = new javax.swing.JPanel();
+        userAccountTitleLabel1 = new javax.swing.JLabel();
+        userAcountInputPanel1 = new javax.swing.JPanel();
+        userAccountLabel1 = new javax.swing.JLabel();
+        userAccountTxtField1 = new javax.swing.JTextField();
+        passwordInputPanel1 = new javax.swing.JPanel();
+        userPasswordLabel1 = new javax.swing.JLabel();
+        userPasswordField1 = new javax.swing.JPasswordField();
+        btnPanel1 = new javax.swing.JPanel();
+        addBtn1 = new javax.swing.JButton();
+        cancelBtn1 = new javax.swing.JButton();
         bodyPanel = new javax.swing.JPanel();
         functionPanel = new javax.swing.JPanel();
         countUserLabel = new javax.swing.JLabel();
-        searchTextField = new javax.swing.JTextField();
-        searchBtn = new javax.swing.JButton();
-        downloadBtn = new javax.swing.JButton();
-        uploadBtn = new javax.swing.JButton();
         addBtn = new javax.swing.JButton();
-        nhanVienScrollPane = new javax.swing.JScrollPane();
+        searchTextField = new javax.swing.JTextField();
+        editBtn = new javax.swing.JButton();
+        deleteBtn = new javax.swing.JButton();
+        searchLabel = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        nhanVienJScrollPane = new javax.swing.JScrollPane();
         nhanVienTable = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
+        SuaNhanVienDialog.setMinimumSize(new java.awt.Dimension(810, 690));
+        SuaNhanVienDialog.setModal(true);
+        SuaNhanVienDialog.setResizable(false);
 
-        headerPanel.setBackground(new java.awt.Color(132, 94, 194));
-        headerPanel.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        headerPanel.setPreferredSize(new java.awt.Dimension(1080, 45));
+        updateUserPanel.setBackground(new java.awt.Color(255, 255, 255));
+        updateUserPanel.setPreferredSize(new java.awt.Dimension(810, 671));
+        updateUserPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        menuIconLabel.setForeground(new java.awt.Color(255, 255, 255));
-        menuIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/list.png"))); // NOI18N
-        menuIconLabel.setInheritsPopupMenu(false);
+        updateTitleLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        updateTitleLabel.setForeground(new java.awt.Color(132, 94, 194));
+        updateTitleLabel.setText("Sửa nhân viên");
+        updateUserPanel.add(updateTitleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 10, -1, -1));
 
-        userHeaderPanel.setBackground(new java.awt.Color(132, 94, 194));
-        userHeaderPanel.setPreferredSize(new java.awt.Dimension(154, 45));
+        userInfoPanel.setBackground(new java.awt.Color(255, 255, 255));
+        userInfoPanel.setPreferredSize(new java.awt.Dimension(762, 356));
 
-        userIconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/contact.png"))); // NOI18N
+        userInfoTitleLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        userInfoTitleLabel.setText("Thông tin cá nhân");
+        userInfoTitleLabel.setPreferredSize(new java.awt.Dimension(131, 36));
 
-        userNameLabel.setBackground(new java.awt.Color(132, 94, 194));
-        userNameLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        userNameLabel.setForeground(new java.awt.Color(255, 255, 255));
-        userNameLabel.setText("Trần Nguyễn Bảo Hoàng");
-        userNameLabel.setAlignmentY(0.0F);
+        userNameInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        userNameInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
 
-        javax.swing.GroupLayout userHeaderPanelLayout = new javax.swing.GroupLayout(userHeaderPanel);
-        userHeaderPanel.setLayout(userHeaderPanelLayout);
-        userHeaderPanelLayout.setHorizontalGroup(
-            userHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, userHeaderPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(userNameLabel)
-                .addGap(5, 5, 5)
-                .addComponent(userIconLabel)
-                .addGap(0, 0, 0))
+        userNameLabel.setBackground(new java.awt.Color(255, 255, 255));
+        userNameLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userNameLabel.setForeground(new java.awt.Color(111, 121, 121));
+        userNameLabel.setText("Họ và tên");
+        userNameLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userNameTxtField.setEditable(false);
+        userNameTxtField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userNameTxtField.setEnabled(false);
+        userNameTxtField.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout userNameInputPanelLayout = new javax.swing.GroupLayout(userNameInputPanel);
+        userNameInputPanel.setLayout(userNameInputPanelLayout);
+        userNameInputPanelLayout.setHorizontalGroup(
+            userNameInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(userNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(userNameTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        userHeaderPanelLayout.setVerticalGroup(
-            userHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(userHeaderPanelLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(userHeaderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(userNameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(userHeaderPanelLayout.createSequentialGroup()
-                        .addComponent(userIconLabel)
-                        .addGap(0, 5, Short.MAX_VALUE)))
+        userNameInputPanelLayout.setVerticalGroup(
+            userNameInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userNameInputPanelLayout.createSequentialGroup()
+                .addComponent(userNameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userNameTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout headerPanelLayout = new javax.swing.GroupLayout(headerPanel);
-        headerPanel.setLayout(headerPanelLayout);
-        headerPanelLayout.setHorizontalGroup(
-            headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(headerPanelLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(menuIconLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(userHeaderPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 1001, Short.MAX_VALUE)
-                .addGap(24, 24, 24))
+        salaryInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        salaryInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        salaryLabel.setBackground(new java.awt.Color(255, 255, 255));
+        salaryLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        salaryLabel.setForeground(new java.awt.Color(111, 121, 121));
+        salaryLabel.setText("Lương");
+        salaryLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        salaryTxtField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#"))));
+        salaryTxtField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+
+        javax.swing.GroupLayout salaryInputPanelLayout = new javax.swing.GroupLayout(salaryInputPanel);
+        salaryInputPanel.setLayout(salaryInputPanelLayout);
+        salaryInputPanelLayout.setHorizontalGroup(
+            salaryInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(salaryInputPanelLayout.createSequentialGroup()
+                .addComponent(salaryLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(314, 314, 314))
+            .addComponent(salaryTxtField)
         );
-        headerPanelLayout.setVerticalGroup(
-            headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(headerPanelLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(menuIconLabel)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(headerPanelLayout.createSequentialGroup()
-                .addComponent(userHeaderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+        salaryInputPanelLayout.setVerticalGroup(
+            salaryInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(salaryInputPanelLayout.createSequentialGroup()
+                .addComponent(salaryLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(salaryTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        emailInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        emailInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        emailLabel.setBackground(new java.awt.Color(255, 255, 255));
+        emailLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        emailLabel.setForeground(new java.awt.Color(111, 121, 121));
+        emailLabel.setText("Email");
+        emailLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        emailTxtField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        emailTxtField.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout emailInputPanelLayout = new javax.swing.GroupLayout(emailInputPanel);
+        emailInputPanel.setLayout(emailInputPanelLayout);
+        emailInputPanelLayout.setHorizontalGroup(
+            emailInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(emailLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(emailTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        emailInputPanelLayout.setVerticalGroup(
+            emailInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(emailInputPanelLayout.createSequentialGroup()
+                .addComponent(emailLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(emailTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        genderInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        genderInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        genderLabel.setBackground(new java.awt.Color(255, 255, 255));
+        genderLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        genderLabel.setForeground(new java.awt.Color(111, 121, 121));
+        genderLabel.setText("Giới tính");
+        genderLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        genderComboBox.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        genderComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam", "Nữ" }));
+        genderComboBox.setEnabled(false);
+
+        javax.swing.GroupLayout genderInputPanelLayout = new javax.swing.GroupLayout(genderInputPanel);
+        genderInputPanel.setLayout(genderInputPanelLayout);
+        genderInputPanelLayout.setHorizontalGroup(
+            genderInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(genderInputPanelLayout.createSequentialGroup()
+                .addComponent(genderLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(genderComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        genderInputPanelLayout.setVerticalGroup(
+            genderInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(genderInputPanelLayout.createSequentialGroup()
+                .addComponent(genderLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(genderComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        birthdateInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        birthdateInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        birthdateLabel.setBackground(new java.awt.Color(255, 255, 255));
+        birthdateLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        birthdateLabel.setForeground(new java.awt.Color(111, 121, 121));
+        birthdateLabel.setText("Ngày sinh");
+        birthdateLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        jDateChooser3.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooser3.setEnabled(false);
+        jDateChooser3.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+
+        javax.swing.GroupLayout birthdateInputPanelLayout = new javax.swing.GroupLayout(birthdateInputPanel);
+        birthdateInputPanel.setLayout(birthdateInputPanelLayout);
+        birthdateInputPanelLayout.setHorizontalGroup(
+            birthdateInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(birthdateInputPanelLayout.createSequentialGroup()
+                .addComponent(birthdateLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jDateChooser3, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
+        );
+        birthdateInputPanelLayout.setVerticalGroup(
+            birthdateInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(birthdateInputPanelLayout.createSequentialGroup()
+                .addComponent(birthdateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jDateChooser3, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        startingDateInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        startingDateInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        startingDateLabel.setBackground(new java.awt.Color(255, 255, 255));
+        startingDateLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        startingDateLabel.setForeground(new java.awt.Color(111, 121, 121));
+        startingDateLabel.setText("Ngày bắt đầu");
+        startingDateLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        jDateChooser4.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooser4.setEnabled(false);
+        jDateChooser4.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+
+        javax.swing.GroupLayout startingDateInputPanelLayout = new javax.swing.GroupLayout(startingDateInputPanel);
+        startingDateInputPanel.setLayout(startingDateInputPanelLayout);
+        startingDateInputPanelLayout.setHorizontalGroup(
+            startingDateInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(startingDateInputPanelLayout.createSequentialGroup()
+                .addGroup(startingDateInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(startingDateInputPanelLayout.createSequentialGroup()
+                        .addComponent(startingDateLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jDateChooser4, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
+        );
+        startingDateInputPanelLayout.setVerticalGroup(
+            startingDateInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(startingDateInputPanelLayout.createSequentialGroup()
+                .addComponent(startingDateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jDateChooser4, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        positionInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        positionInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        positionLabel.setBackground(new java.awt.Color(255, 255, 255));
+        positionLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        positionLabel.setForeground(new java.awt.Color(111, 121, 121));
+        positionLabel.setText("Chức vụ");
+        positionLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        positionComboBox.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        positionComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nhân viên", "Quản lí" }));
+
+        javax.swing.GroupLayout positionInputPanelLayout = new javax.swing.GroupLayout(positionInputPanel);
+        positionInputPanel.setLayout(positionInputPanelLayout);
+        positionInputPanelLayout.setHorizontalGroup(
+            positionInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(positionInputPanelLayout.createSequentialGroup()
+                .addComponent(positionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(positionComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        positionInputPanelLayout.setVerticalGroup(
+            positionInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(positionInputPanelLayout.createSequentialGroup()
+                .addComponent(positionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(positionComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        statusInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        statusInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        statusLabel.setBackground(new java.awt.Color(255, 255, 255));
+        statusLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        statusLabel.setForeground(new java.awt.Color(111, 121, 121));
+        statusLabel.setText("Trạng thái");
+        statusLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        statusComboBox.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        statusComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Đang làm", "Nghỉ làm" }));
+
+        javax.swing.GroupLayout statusInputPanelLayout = new javax.swing.GroupLayout(statusInputPanel);
+        statusInputPanel.setLayout(statusInputPanelLayout);
+        statusInputPanelLayout.setHorizontalGroup(
+            statusInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusInputPanelLayout.createSequentialGroup()
+                .addComponent(statusLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(statusComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        statusInputPanelLayout.setVerticalGroup(
+            statusInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusInputPanelLayout.createSequentialGroup()
+                .addComponent(statusLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(statusComboBox, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        phoneNumberInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        phoneNumberInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        phoneNumberLabel.setBackground(new java.awt.Color(255, 255, 255));
+        phoneNumberLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        phoneNumberLabel.setForeground(new java.awt.Color(111, 121, 121));
+        phoneNumberLabel.setText("Số điện thoại");
+        phoneNumberLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        phoneNumberTxtField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        phoneNumberTxtField.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout phoneNumberInputPanelLayout = new javax.swing.GroupLayout(phoneNumberInputPanel);
+        phoneNumberInputPanel.setLayout(phoneNumberInputPanelLayout);
+        phoneNumberInputPanelLayout.setHorizontalGroup(
+            phoneNumberInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(phoneNumberLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(phoneNumberTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        phoneNumberInputPanelLayout.setVerticalGroup(
+            phoneNumberInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(phoneNumberInputPanelLayout.createSequentialGroup()
+                .addComponent(phoneNumberLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(phoneNumberTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout userInfoPanelLayout = new javax.swing.GroupLayout(userInfoPanel);
+        userInfoPanel.setLayout(userInfoPanelLayout);
+        userInfoPanelLayout.setHorizontalGroup(
+            userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userInfoPanelLayout.createSequentialGroup()
+                .addGroup(userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(userInfoPanelLayout.createSequentialGroup()
+                        .addComponent(positionInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addComponent(statusInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(userInfoPanelLayout.createSequentialGroup()
+                        .addComponent(birthdateInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addComponent(startingDateInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(userInfoPanelLayout.createSequentialGroup()
+                        .addComponent(emailInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addComponent(genderInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(userInfoPanelLayout.createSequentialGroup()
+                        .addComponent(userNameInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22)
+                        .addComponent(salaryInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(userInfoTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(phoneNumberInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        userInfoPanelLayout.setVerticalGroup(
+            userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userInfoPanelLayout.createSequentialGroup()
+                .addGroup(userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(genderInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(userInfoPanelLayout.createSequentialGroup()
+                        .addComponent(userInfoTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addGroup(userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userNameInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(salaryInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, 0)
+                        .addComponent(emailInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(birthdateInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(startingDateInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addGroup(userInfoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(positionInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(statusInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0)
+                .addComponent(phoneNumberInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        updateUserPanel.add(userInfoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 47, -1, -1));
+
+        userAccountPanel.setBackground(new java.awt.Color(255, 255, 255));
+        userAccountPanel.setPreferredSize(new java.awt.Dimension(762, 164));
+
+        userAccountTitleLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        userAccountTitleLabel.setText("Thông tin tài khoản");
+        userAccountTitleLabel.setPreferredSize(new java.awt.Dimension(131, 36));
+
+        userAcountInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        userAcountInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        userAccountLabel.setBackground(new java.awt.Color(255, 255, 255));
+        userAccountLabel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userAccountLabel.setForeground(new java.awt.Color(111, 121, 121));
+        userAccountLabel.setText("Tài khoản");
+        userAccountLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userAccountTxtField.setEditable(false);
+        userAccountTxtField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userAccountTxtField.setEnabled(false);
+        userAccountTxtField.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout userAcountInputPanelLayout = new javax.swing.GroupLayout(userAcountInputPanel);
+        userAcountInputPanel.setLayout(userAcountInputPanelLayout);
+        userAcountInputPanelLayout.setHorizontalGroup(
+            userAcountInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(userAccountLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(userAccountTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        userAcountInputPanelLayout.setVerticalGroup(
+            userAcountInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userAcountInputPanelLayout.createSequentialGroup()
+                .addComponent(userAccountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userAccountTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        passwordInputPanel.setBackground(new java.awt.Color(255, 255, 255));
+        passwordInputPanel.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        passwordInputPanel.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        userPasswordLabel.setBackground(new java.awt.Color(255, 255, 255));
+        userPasswordLabel.setForeground(new java.awt.Color(111, 121, 121));
+        userPasswordLabel.setText("Mật khẩu");
+        userPasswordLabel.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userPasswordField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userPasswordField.setPreferredSize(new java.awt.Dimension(90, 36));
+
+        javax.swing.GroupLayout passwordInputPanelLayout = new javax.swing.GroupLayout(passwordInputPanel);
+        passwordInputPanel.setLayout(passwordInputPanelLayout);
+        passwordInputPanelLayout.setHorizontalGroup(
+            passwordInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(passwordInputPanelLayout.createSequentialGroup()
+                .addComponent(userPasswordLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(userPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        passwordInputPanelLayout.setVerticalGroup(
+            passwordInputPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(passwordInputPanelLayout.createSequentialGroup()
+                .addComponent(userPasswordLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+
+        javax.swing.GroupLayout userAccountPanelLayout = new javax.swing.GroupLayout(userAccountPanel);
+        userAccountPanel.setLayout(userAccountPanelLayout);
+        userAccountPanelLayout.setHorizontalGroup(
+            userAccountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userAccountPanelLayout.createSequentialGroup()
+                .addGroup(userAccountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(userAccountTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userAcountInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(passwordInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(333, 333, 333))
+        );
+        userAccountPanelLayout.setVerticalGroup(
+            userAccountPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userAccountPanelLayout.createSequentialGroup()
+                .addComponent(userAccountTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userAcountInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(passwordInputPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        updateUserPanel.add(userAccountPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 423, -1, -1));
+
+        btnPanel.setBackground(new java.awt.Color(255, 255, 255));
+        btnPanel.setPreferredSize(new java.awt.Dimension(762, 34));
+
+        updateBtn.setBackground(new java.awt.Color(0, 201, 167));
+        updateBtn.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        updateBtn.setForeground(new java.awt.Color(255, 255, 255));
+        updateBtn.setText("Cập nhật");
+        updateBtn.setPreferredSize(new java.awt.Dimension(80, 34));
+
+        cancelBtn.setBackground(new java.awt.Color(0, 201, 167));
+        cancelBtn.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        cancelBtn.setForeground(new java.awt.Color(255, 255, 255));
+        cancelBtn.setText("Huỷ");
+        cancelBtn.setPreferredSize(new java.awt.Dimension(70, 34));
+
+        javax.swing.GroupLayout btnPanelLayout = new javax.swing.GroupLayout(btnPanel);
+        btnPanel.setLayout(btnPanelLayout);
+        btnPanelLayout.setHorizontalGroup(
+            btnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPanelLayout.createSequentialGroup()
+                .addContainerGap(590, Short.MAX_VALUE)
+                .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+        btnPanelLayout.setVerticalGroup(
+            btnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(btnPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(updateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        updateUserPanel.add(btnPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 617, -1, -1));
+
+        javax.swing.GroupLayout SuaNhanVienDialogLayout = new javax.swing.GroupLayout(SuaNhanVienDialog.getContentPane());
+        SuaNhanVienDialog.getContentPane().setLayout(SuaNhanVienDialogLayout);
+        SuaNhanVienDialogLayout.setHorizontalGroup(
+            SuaNhanVienDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(updateUserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        SuaNhanVienDialogLayout.setVerticalGroup(
+            SuaNhanVienDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(updateUserPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        ThemNhanVienDialog.setBackground(new java.awt.Color(255, 255, 255));
+        ThemNhanVienDialog.setMinimumSize(new java.awt.Dimension(810, 690));
+        ThemNhanVienDialog.setModal(true);
+        ThemNhanVienDialog.setResizable(false);
+        ThemNhanVienDialog.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        addUserPanel.setBackground(new java.awt.Color(255, 255, 255));
+        addUserPanel.setPreferredSize(new java.awt.Dimension(810, 671));
+        addUserPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(132, 94, 194));
+        jLabel1.setText("Thêm nhân viên");
+        addUserPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 10, -1, -1));
+
+        userInfoPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        userInfoPanel1.setOpaque(false);
+        userInfoPanel1.setPreferredSize(new java.awt.Dimension(762, 356));
+        userInfoPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        userInfoTitleLabel1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        userInfoTitleLabel1.setText("Thông tin cá nhân");
+        userInfoTitleLabel1.setPreferredSize(new java.awt.Dimension(131, 36));
+        userInfoPanel1.add(userInfoTitleLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        userNameInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        userNameInputPanel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userNameInputPanel1.setOpaque(false);
+        userNameInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        userNameLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        userNameLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userNameLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        userNameLabel1.setText("Họ và tên");
+        userNameLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userNameTxtField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userNameTxtField1.setMinimumSize(new java.awt.Dimension(370, 36));
+        userNameTxtField1.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout userNameInputPanel1Layout = new javax.swing.GroupLayout(userNameInputPanel1);
+        userNameInputPanel1.setLayout(userNameInputPanel1Layout);
+        userNameInputPanel1Layout.setHorizontalGroup(
+            userNameInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(userNameLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(userNameTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        userNameInputPanel1Layout.setVerticalGroup(
+            userNameInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userNameInputPanel1Layout.createSequentialGroup()
+                .addComponent(userNameLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userNameTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        userInfoPanel1.add(userNameInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 36, -1, -1));
+
+        salaryInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        salaryInputPanel1.setOpaque(false);
+        salaryInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        salaryLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        salaryLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        salaryLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        salaryLabel1.setText("Lương");
+        salaryLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        salaryTxtField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("############"))));
+        salaryTxtField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        salaryTxtField1.setMinimumSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout salaryInputPanel1Layout = new javax.swing.GroupLayout(salaryInputPanel1);
+        salaryInputPanel1.setLayout(salaryInputPanel1Layout);
+        salaryInputPanel1Layout.setHorizontalGroup(
+            salaryInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(salaryInputPanel1Layout.createSequentialGroup()
+                .addComponent(salaryLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(314, 314, 314))
+            .addComponent(salaryTxtField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        salaryInputPanel1Layout.setVerticalGroup(
+            salaryInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(salaryInputPanel1Layout.createSequentialGroup()
+                .addComponent(salaryLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(salaryTxtField1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
+        );
+
+        userInfoPanel1.add(salaryInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 36, -1, -1));
+
+        emailInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        emailInputPanel1.setOpaque(false);
+        emailInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        emailLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        emailLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        emailLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        emailLabel1.setText("Email");
+        emailLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        emailTxtField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        emailTxtField1.setMinimumSize(new java.awt.Dimension(370, 36));
+        emailTxtField1.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout emailInputPanel1Layout = new javax.swing.GroupLayout(emailInputPanel1);
+        emailInputPanel1.setLayout(emailInputPanel1Layout);
+        emailInputPanel1Layout.setHorizontalGroup(
+            emailInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(emailLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(emailTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        emailInputPanel1Layout.setVerticalGroup(
+            emailInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(emailInputPanel1Layout.createSequentialGroup()
+                .addComponent(emailLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(emailTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        userInfoPanel1.add(emailInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+
+        genderInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        genderInputPanel1.setOpaque(false);
+        genderInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        genderLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        genderLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        genderLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        genderLabel1.setText("Giới tính");
+        genderLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        genderComboBox1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        genderComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nam", "Nữ" }));
+        genderComboBox1.setMinimumSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout genderInputPanel1Layout = new javax.swing.GroupLayout(genderInputPanel1);
+        genderInputPanel1.setLayout(genderInputPanel1Layout);
+        genderInputPanel1Layout.setHorizontalGroup(
+            genderInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(genderInputPanel1Layout.createSequentialGroup()
+                .addComponent(genderLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(genderComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        genderInputPanel1Layout.setVerticalGroup(
+            genderInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(genderInputPanel1Layout.createSequentialGroup()
+                .addComponent(genderLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(genderComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        userInfoPanel1.add(genderInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 100, -1, -1));
+
+        birthdateInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        birthdateInputPanel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        birthdateInputPanel1.setOpaque(false);
+        birthdateInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        birthdateLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        birthdateLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        birthdateLabel1.setText("Ngày sinh");
+        birthdateLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooser1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+
+        javax.swing.GroupLayout birthdateInputPanel1Layout = new javax.swing.GroupLayout(birthdateInputPanel1);
+        birthdateInputPanel1.setLayout(birthdateInputPanel1Layout);
+        birthdateInputPanel1Layout.setHorizontalGroup(
+            birthdateInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(birthdateInputPanel1Layout.createSequentialGroup()
+                .addGroup(birthdateInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(birthdateInputPanel1Layout.createSequentialGroup()
+                        .addComponent(birthdateLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
+        );
+        birthdateInputPanel1Layout.setVerticalGroup(
+            birthdateInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(birthdateInputPanel1Layout.createSequentialGroup()
+                .addComponent(birthdateLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        userInfoPanel1.add(birthdateInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 164, -1, -1));
+
+        startingDateInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        startingDateInputPanel1.setOpaque(false);
+        startingDateInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        startingDateLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        startingDateLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        startingDateLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        startingDateLabel1.setText("Ngày bắt đầu");
+        startingDateLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        jDateChooser2.setBackground(new java.awt.Color(255, 255, 255));
+        jDateChooser2.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+
+        javax.swing.GroupLayout startingDateInputPanel1Layout = new javax.swing.GroupLayout(startingDateInputPanel1);
+        startingDateInputPanel1.setLayout(startingDateInputPanel1Layout);
+        startingDateInputPanel1Layout.setHorizontalGroup(
+            startingDateInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(startingDateInputPanel1Layout.createSequentialGroup()
+                .addComponent(startingDateLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jDateChooser2, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
+        );
+        startingDateInputPanel1Layout.setVerticalGroup(
+            startingDateInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(startingDateInputPanel1Layout.createSequentialGroup()
+                .addComponent(startingDateLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jDateChooser2, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        userInfoPanel1.add(startingDateInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 164, -1, -1));
+
+        positionInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        positionInputPanel1.setOpaque(false);
+        positionInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        positionLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        positionLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        positionLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        positionLabel1.setText("Chức vụ");
+        positionLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        positionComboBox1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        positionComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Nhân viên", "Quản lí" }));
+        positionComboBox1.setMinimumSize(new java.awt.Dimension(370, 36));
+        positionComboBox1.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout positionInputPanel1Layout = new javax.swing.GroupLayout(positionInputPanel1);
+        positionInputPanel1.setLayout(positionInputPanel1Layout);
+        positionInputPanel1Layout.setHorizontalGroup(
+            positionInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(positionInputPanel1Layout.createSequentialGroup()
+                .addComponent(positionLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(positionComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        positionInputPanel1Layout.setVerticalGroup(
+            positionInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(positionInputPanel1Layout.createSequentialGroup()
+                .addComponent(positionLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(positionComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        userInfoPanel1.add(positionInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 228, -1, -1));
+
+        statusInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        statusInputPanel1.setOpaque(false);
+        statusInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        statusLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        statusLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        statusLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        statusLabel1.setText("Trạng thái");
+        statusLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        statusComboBox1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        statusComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Đang làm", "Nghỉ làm" }));
+        statusComboBox1.setMinimumSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout statusInputPanel1Layout = new javax.swing.GroupLayout(statusInputPanel1);
+        statusInputPanel1.setLayout(statusInputPanel1Layout);
+        statusInputPanel1Layout.setHorizontalGroup(
+            statusInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusInputPanel1Layout.createSequentialGroup()
+                .addComponent(statusLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(statusComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        statusInputPanel1Layout.setVerticalGroup(
+            statusInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(statusInputPanel1Layout.createSequentialGroup()
+                .addComponent(statusLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(statusComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE))
+        );
+
+        userInfoPanel1.add(statusInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 228, -1, -1));
+
+        phoneNumberInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        phoneNumberInputPanel1.setOpaque(false);
+        phoneNumberInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        phoneNumberLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        phoneNumberLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        phoneNumberLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        phoneNumberLabel1.setText("Số điện thoại");
+        phoneNumberLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        phoneNumberTxtField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        phoneNumberTxtField1.setMinimumSize(new java.awt.Dimension(370, 36));
+        phoneNumberTxtField1.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout phoneNumberInputPanel1Layout = new javax.swing.GroupLayout(phoneNumberInputPanel1);
+        phoneNumberInputPanel1.setLayout(phoneNumberInputPanel1Layout);
+        phoneNumberInputPanel1Layout.setHorizontalGroup(
+            phoneNumberInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(phoneNumberLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(phoneNumberTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        phoneNumberInputPanel1Layout.setVerticalGroup(
+            phoneNumberInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(phoneNumberInputPanel1Layout.createSequentialGroup()
+                .addComponent(phoneNumberLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(phoneNumberTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        userInfoPanel1.add(phoneNumberInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 292, -1, -1));
+
+        addUserPanel.add(userInfoPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 47, -1, -1));
+
+        userAccountPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        userAccountPanel1.setOpaque(false);
+        userAccountPanel1.setPreferredSize(new java.awt.Dimension(762, 164));
+        userAccountPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        userAccountTitleLabel1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        userAccountTitleLabel1.setText("Thông tin tài khoản");
+        userAccountTitleLabel1.setPreferredSize(new java.awt.Dimension(131, 36));
+        userAccountPanel1.add(userAccountTitleLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 148, -1));
+
+        userAcountInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        userAcountInputPanel1.setOpaque(false);
+        userAcountInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        userAccountLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        userAccountLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userAccountLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        userAccountLabel1.setText("Tài khoản");
+        userAccountLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userAccountTxtField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userAccountTxtField1.setMinimumSize(new java.awt.Dimension(370, 36));
+        userAccountTxtField1.setPreferredSize(new java.awt.Dimension(370, 36));
+
+        javax.swing.GroupLayout userAcountInputPanel1Layout = new javax.swing.GroupLayout(userAcountInputPanel1);
+        userAcountInputPanel1.setLayout(userAcountInputPanel1Layout);
+        userAcountInputPanel1Layout.setHorizontalGroup(
+            userAcountInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(userAccountLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(userAccountTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        userAcountInputPanel1Layout.setVerticalGroup(
+            userAcountInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userAcountInputPanel1Layout.createSequentialGroup()
+                .addComponent(userAccountLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userAccountTxtField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        userAccountPanel1.add(userAcountInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 36, -1, -1));
+
+        passwordInputPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        passwordInputPanel1.setOpaque(false);
+        passwordInputPanel1.setPreferredSize(new java.awt.Dimension(370, 64));
+
+        userPasswordLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        userPasswordLabel1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userPasswordLabel1.setForeground(new java.awt.Color(111, 121, 121));
+        userPasswordLabel1.setText("Mật khẩu");
+        userPasswordLabel1.setPreferredSize(new java.awt.Dimension(56, 28));
+
+        userPasswordField1.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        userPasswordField1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        userPasswordField1.setMinimumSize(new java.awt.Dimension(370, 36));
+        userPasswordField1.setPreferredSize(new java.awt.Dimension(90, 36));
+
+        javax.swing.GroupLayout passwordInputPanel1Layout = new javax.swing.GroupLayout(passwordInputPanel1);
+        passwordInputPanel1.setLayout(passwordInputPanel1Layout);
+        passwordInputPanel1Layout.setHorizontalGroup(
+            passwordInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(passwordInputPanel1Layout.createSequentialGroup()
+                .addComponent(userPasswordLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(userPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        passwordInputPanel1Layout.setVerticalGroup(
+            passwordInputPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(passwordInputPanel1Layout.createSequentialGroup()
+                .addComponent(userPasswordLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(userPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+        );
+
+        userAccountPanel1.add(passwordInputPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, -1, -1));
+
+        addUserPanel.add(userAccountPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 423, 370, -1));
+
+        btnPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        btnPanel1.setOpaque(false);
+        btnPanel1.setPreferredSize(new java.awt.Dimension(762, 34));
+        btnPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        addBtn1.setBackground(new java.awt.Color(0, 201, 167));
+        addBtn1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        addBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        addBtn1.setText("Thêm");
+        addBtn1.setPreferredSize(new java.awt.Dimension(80, 34));
+        btnPanel1.add(addBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(682, 0, -1, -1));
+
+        cancelBtn1.setBackground(new java.awt.Color(0, 201, 167));
+        cancelBtn1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        cancelBtn1.setForeground(new java.awt.Color(255, 255, 255));
+        cancelBtn1.setText("Huỷ");
+        cancelBtn1.setPreferredSize(new java.awt.Dimension(70, 34));
+        btnPanel1.add(cancelBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(602, 0, -1, -1));
+
+        addUserPanel.add(btnPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 617, -1, -1));
+
+        ThemNhanVienDialog.getContentPane().add(addUserPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        setPreferredSize(new java.awt.Dimension(1080, 730));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         bodyPanel.setBackground(new java.awt.Color(255, 255, 255));
+        bodyPanel.setMinimumSize(new java.awt.Dimension(1080, 730));
         bodyPanel.setPreferredSize(new java.awt.Dimension(1080, 723));
 
         functionPanel.setBackground(new java.awt.Color(255, 255, 255));
         functionPanel.setOpaque(false);
         functionPanel.setPreferredSize(new java.awt.Dimension(1032, 44));
         functionPanel.setRequestFocusEnabled(false);
+        functionPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        countUserLabel.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        countUserLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         countUserLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         countUserLabel.setText("Tổng nhân viên: 0");
         countUserLabel.setAlignmentY(0.0F);
         countUserLabel.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         countUserLabel.setPreferredSize(new java.awt.Dimension(129, 44));
+        functionPanel.add(countUserLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, -1, 30));
+
+        addBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/addition.png"))); // NOI18N
+        addBtn.setBorderPainted(false);
+        addBtn.setContentAreaFilled(false);
+        addBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        addBtn.setFocusPainted(false);
+        functionPanel.add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 0, -1, -1));
 
         searchTextField.setBackground(new java.awt.Color(251, 234, 255));
-        searchTextField.setColumns(20);
-        searchTextField.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        searchTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        searchTextField.setToolTipText("");
-        searchTextField.setRequestFocusEnabled(false);
-        searchTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchTextFieldActionPerformed(evt);
-            }
-        });
+        searchTextField.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
+        searchTextField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(132, 94, 194)));
+        functionPanel.add(searchTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 260, 32));
 
-        searchBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/search-interface-symbol.png"))); // NOI18N
-        searchBtn.setBorder(null);
-        searchBtn.setBorderPainted(false);
-        searchBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBtnActionPerformed(evt);
-            }
-        });
+        editBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pen.jpg"))); // NOI18N
+        editBtn.setBorderPainted(false);
+        editBtn.setContentAreaFilled(false);
+        editBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        editBtn.setFocusPainted(false);
+        functionPanel.add(editBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 0, -1, -1));
 
-        downloadBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/download-to-storage-drive.png"))); // NOI18N
-        downloadBtn.setBorderPainted(false);
+        deleteBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/delete.png"))); // NOI18N
+        deleteBtn.setBorderPainted(false);
+        deleteBtn.setContentAreaFilled(false);
+        deleteBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        deleteBtn.setFocusPainted(false);
+        functionPanel.add(deleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, -1, -1));
 
-        uploadBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/upload.png"))); // NOI18N
-        uploadBtn.setBorderPainted(false);
+        searchLabel.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        searchLabel.setText("Tìm kiếm nhân viên");
+        functionPanel.add(searchLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, -1, 31));
 
-        addBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/img/addition.png"))); // NOI18N
-        addBtn.setBorderPainted(false);
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(132, 94, 194));
+        jLabel2.setText("NHÂN VIÊN");
+        functionPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        javax.swing.GroupLayout functionPanelLayout = new javax.swing.GroupLayout(functionPanel);
-        functionPanel.setLayout(functionPanelLayout);
-        functionPanelLayout.setHorizontalGroup(
-            functionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(functionPanelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(countUserLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-                .addGap(407, 407, 407)
-                .addComponent(searchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                .addGap(20, 20, 20)
-                .addComponent(addBtn)
-                .addGap(20, 20, 20)
-                .addComponent(downloadBtn)
-                .addGap(20, 20, 20)
-                .addComponent(uploadBtn))
-        );
-        functionPanelLayout.setVerticalGroup(
-            functionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(functionPanelLayout.createSequentialGroup()
-                .addGap(7, 7, 7)
-                .addGroup(functionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(addBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(uploadBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(downloadBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(functionPanelLayout.createSequentialGroup()
-                .addGroup(functionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(searchTextField)
-                    .addComponent(countUserLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        nhanVienJScrollPane.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nhanVienJScrollPane.setFocusable(false);
+        nhanVienJScrollPane.setPreferredSize(new java.awt.Dimension(1032, 598));
 
-        nhanVienScrollPane.setColumnHeaderView(null);
-        nhanVienScrollPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        nhanVienTable.setAutoCreateRowSorter(true);
+        nhanVienTable.setFont(new java.awt.Font("Roboto", 0, 13)); // NOI18N
         nhanVienTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null, null},
@@ -207,52 +1118,37 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "STT", "Họ và tên", "Giới tính", "Ngày sinh", "Email", "Số điện thoại", "Tổng chi tiêu", "Nợ", "Chú ý", ""
+                "ID", "Họ và tên", "Số điện thoại", "Email", "Giới tính", "Ngày sinh", "Ngày bắt đầu", "Chức vụ", "Lương", "Trạng thái"
             }
         ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
-            };
             boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false, false, false, false, false
             };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        nhanVienTable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        nhanVienTable.setEnabled(false);
+        nhanVienTable.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nhanVienTable.setFocusable(false);
+        nhanVienTable.setPreferredSize(new java.awt.Dimension(1032, 570));
         nhanVienTable.setRowHeight(44);
-        nhanVienTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        nhanVienTable.setShowGrid(true);
-        nhanVienScrollPane.setViewportView(nhanVienTable);
-        nhanVienTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        nhanVienTable.setShowGrid(false);
+        nhanVienTable.setShowVerticalLines(false);
+        nhanVienTable.getTableHeader().setReorderingAllowed(false);
+        nhanVienJScrollPane.setViewportView(nhanVienTable);
+        nhanVienTable.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
         if (nhanVienTable.getColumnModel().getColumnCount() > 0) {
-            nhanVienTable.getColumnModel().getColumn(0).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(0).setPreferredWidth(44);
-            nhanVienTable.getColumnModel().getColumn(1).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(1).setPreferredWidth(160);
-            nhanVienTable.getColumnModel().getColumn(2).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(2).setPreferredWidth(64);
-            nhanVienTable.getColumnModel().getColumn(3).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(3).setPreferredWidth(100);
-            nhanVienTable.getColumnModel().getColumn(4).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(4).setPreferredWidth(168);
-            nhanVienTable.getColumnModel().getColumn(5).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(5).setPreferredWidth(96);
-            nhanVienTable.getColumnModel().getColumn(6).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(6).setPreferredWidth(90);
-            nhanVienTable.getColumnModel().getColumn(7).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(7).setPreferredWidth(90);
-            nhanVienTable.getColumnModel().getColumn(8).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(8).setPreferredWidth(80);
-            nhanVienTable.getColumnModel().getColumn(9).setResizable(false);
-            nhanVienTable.getColumnModel().getColumn(9).setPreferredWidth(60);
+            nhanVienTable.getColumnModel().getColumn(0).setHeaderValue("ID");
+            nhanVienTable.getColumnModel().getColumn(1).setHeaderValue("Họ và tên");
+            nhanVienTable.getColumnModel().getColumn(2).setHeaderValue("Số điện thoại");
+            nhanVienTable.getColumnModel().getColumn(3).setHeaderValue("Email");
+            nhanVienTable.getColumnModel().getColumn(4).setHeaderValue("Giới tính");
+            nhanVienTable.getColumnModel().getColumn(5).setHeaderValue("Ngày sinh");
+            nhanVienTable.getColumnModel().getColumn(6).setHeaderValue("Ngày bắt đầu");
+            nhanVienTable.getColumnModel().getColumn(7).setHeaderValue("Chức vụ");
+            nhanVienTable.getColumnModel().getColumn(8).setHeaderValue("Lương");
+            nhanVienTable.getColumnModel().getColumn(9).setHeaderValue("Trạng thái");
         }
 
         javax.swing.GroupLayout bodyPanelLayout = new javax.swing.GroupLayout(bodyPanel);
@@ -262,9 +1158,9 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
             .addGroup(bodyPanelLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(nhanVienScrollPane)
-                    .addComponent(functionPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(functionPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nhanVienJScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24))
         );
         bodyPanelLayout.setVerticalGroup(
             bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,87 +1168,893 @@ public class QuanLiNhanVien extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addComponent(functionPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
-                .addComponent(nhanVienScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addComponent(nhanVienJScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bodyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(bodyPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pack();
+        add(bodyPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 730));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchTextFieldActionPerformed
 
-    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_searchBtnActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(QuanLiNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(QuanLiNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(QuanLiNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(QuanLiNhanVien.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new QuanLiNhanVien().setVisible(true);
-            }
-        });
+    public JDialog getSuaNhanVienDialog() {
+        return SuaNhanVienDialog;
     }
 
+    public void setSuaNhanVienDialog(JDialog SuaNhanVienDialog) {
+        this.SuaNhanVienDialog = SuaNhanVienDialog;
+    }
+
+    public JDialog getThemNhanVienDialog() {
+        return ThemNhanVienDialog;
+    }
+
+    public void setThemNhanVienDialog(JDialog ThemNhanVienDialog) {
+        this.ThemNhanVienDialog = ThemNhanVienDialog;
+    }
+
+    public JButton getAddBtn() {
+        return addBtn;
+    }
+
+    public void setAddBtn(JButton addBtn) {
+        this.addBtn = addBtn;
+    }
+
+    public JButton getAddBtn1() {
+        return addBtn1;
+    }
+
+    public void setAddBtn1(JButton addBtn1) {
+        this.addBtn1 = addBtn1;
+    }
+
+    public JPanel getAddUserPanel() {
+        return addUserPanel;
+    }
+
+    public void setAddUserPanel(JPanel addUserPanel) {
+        this.addUserPanel = addUserPanel;
+    }
+
+    public JPanel getBirthdateInputPanel() {
+        return birthdateInputPanel;
+    }
+
+    public void setBirthdateInputPanel(JPanel birthdateInputPanel) {
+        this.birthdateInputPanel = birthdateInputPanel;
+    }
+
+    public JPanel getBirthdateInputPanel1() {
+        return birthdateInputPanel1;
+    }
+
+    public void setBirthdateInputPanel1(JPanel birthdateInputPanel1) {
+        this.birthdateInputPanel1 = birthdateInputPanel1;
+    }
+
+    public JLabel getBirthdateLabel() {
+        return birthdateLabel;
+    }
+
+    public void setBirthdateLabel(JLabel birthdateLabel) {
+        this.birthdateLabel = birthdateLabel;
+    }
+
+    public JLabel getBirthdateLabel1() {
+        return birthdateLabel1;
+    }
+
+    public void setBirthdateLabel1(JLabel birthdateLabel1) {
+        this.birthdateLabel1 = birthdateLabel1;
+    }
+
+    public JPanel getBodyPanel() {
+        return bodyPanel;
+    }
+
+    public void setBodyPanel(JPanel bodyPanel) {
+        this.bodyPanel = bodyPanel;
+    }
+
+    public JPanel getBtnPanel() {
+        return btnPanel;
+    }
+
+    public void setBtnPanel(JPanel btnPanel) {
+        this.btnPanel = btnPanel;
+    }
+
+    public JPanel getBtnPanel1() {
+        return btnPanel1;
+    }
+
+    public void setBtnPanel1(JPanel btnPanel1) {
+        this.btnPanel1 = btnPanel1;
+    }
+
+    public JButton getCancelBtn() {
+        return cancelBtn;
+    }
+
+    public void setCancelBtn(JButton cancelBtn) {
+        this.cancelBtn = cancelBtn;
+    }
+
+    public JButton getCancelBtn1() {
+        return cancelBtn1;
+    }
+
+    public void setCancelBtn1(JButton cancelBtn1) {
+        this.cancelBtn1 = cancelBtn1;
+    }
+
+    public JLabel getCountUserLabel() {
+        return countUserLabel;
+    }
+
+    public void setCountUserLabel(JLabel countUserLabel) {
+        this.countUserLabel = countUserLabel;
+    }
+
+    public JButton getDeleteBtn() {
+        return deleteBtn;
+    }
+
+    public void setDeleteBtn(JButton deleteBtn) {
+        this.deleteBtn = deleteBtn;
+    }
+
+    public JButton getEditBtn() {
+        return editBtn;
+    }
+
+    public void setEditBtn(JButton editBtn) {
+        this.editBtn = editBtn;
+    }
+
+    public JPanel getEmailInputPanel() {
+        return emailInputPanel;
+    }
+
+    public void setEmailInputPanel(JPanel emailInputPanel) {
+        this.emailInputPanel = emailInputPanel;
+    }
+
+    public JPanel getEmailInputPanel1() {
+        return emailInputPanel1;
+    }
+
+    public void setEmailInputPanel1(JPanel emailInputPanel1) {
+        this.emailInputPanel1 = emailInputPanel1;
+    }
+
+    public JLabel getEmailLabel() {
+        return emailLabel;
+    }
+
+    public void setEmailLabel(JLabel emailLabel) {
+        this.emailLabel = emailLabel;
+    }
+
+    public JLabel getEmailLabel1() {
+        return emailLabel1;
+    }
+
+    public void setEmailLabel1(JLabel emailLabel1) {
+        this.emailLabel1 = emailLabel1;
+    }
+
+    public JTextField getEmailTxtField() {
+        return emailTxtField;
+    }
+
+    public void setEmailTxtField(JTextField emailTxtField) {
+        this.emailTxtField = emailTxtField;
+    }
+
+    public JTextField getEmailTxtField1() {
+        return emailTxtField1;
+    }
+
+    public void setEmailTxtField1(JTextField emailTxtField1) {
+        this.emailTxtField1 = emailTxtField1;
+    }
+
+    public JPanel getFunctionPanel() {
+        return functionPanel;
+    }
+
+    public void setFunctionPanel(JPanel functionPanel) {
+        this.functionPanel = functionPanel;
+    }
+
+    public JComboBox<String> getGenderComboBox() {
+        return genderComboBox;
+    }
+
+    public void setGenderComboBox(JComboBox<String> genderComboBox) {
+        this.genderComboBox = genderComboBox;
+    }
+
+    public JComboBox<String> getGenderComboBox1() {
+        return genderComboBox1;
+    }
+
+    public void setGenderComboBox1(JComboBox<String> genderComboBox1) {
+        this.genderComboBox1 = genderComboBox1;
+    }
+
+    public JPanel getGenderInputPanel() {
+        return genderInputPanel;
+    }
+
+    public void setGenderInputPanel(JPanel genderInputPanel) {
+        this.genderInputPanel = genderInputPanel;
+    }
+
+    public JPanel getGenderInputPanel1() {
+        return genderInputPanel1;
+    }
+
+    public void setGenderInputPanel1(JPanel genderInputPanel1) {
+        this.genderInputPanel1 = genderInputPanel1;
+    }
+
+    public JLabel getGenderLabel() {
+        return genderLabel;
+    }
+
+    public void setGenderLabel(JLabel genderLabel) {
+        this.genderLabel = genderLabel;
+    }
+
+    public JLabel getGenderLabel1() {
+        return genderLabel1;
+    }
+
+    public void setGenderLabel1(JLabel genderLabel1) {
+        this.genderLabel1 = genderLabel1;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public void setjLabel1(JLabel jLabel1) {
+        this.jLabel1 = jLabel1;
+    }
+
+    public JScrollPane getNhanVienJScrollPane() {
+        return nhanVienJScrollPane;
+    }
+
+    public void setNhanVienJScrollPane(JScrollPane nhanVienJScrollPane) {
+        this.nhanVienJScrollPane = nhanVienJScrollPane;
+    }
+
+    public JTable getNhanVienTable() {
+        return nhanVienTable;
+    }
+
+    public void setNhanVienTable(JTable nhanVienTable) {
+        this.nhanVienTable = nhanVienTable;
+    }
+
+    public JPanel getPasswordInputPanel() {
+        return passwordInputPanel;
+    }
+
+    public void setPasswordInputPanel(JPanel passwordInputPanel) {
+        this.passwordInputPanel = passwordInputPanel;
+    }
+
+    public JPanel getPasswordInputPanel1() {
+        return passwordInputPanel1;
+    }
+
+    public void setPasswordInputPanel1(JPanel passwordInputPanel1) {
+        this.passwordInputPanel1 = passwordInputPanel1;
+    }
+
+    public JPanel getPhoneNumberInputPanel() {
+        return phoneNumberInputPanel;
+    }
+
+    public void setPhoneNumberInputPanel(JPanel phoneNumberInputPanel) {
+        this.phoneNumberInputPanel = phoneNumberInputPanel;
+    }
+
+    public JPanel getPhoneNumberInputPanel1() {
+        return phoneNumberInputPanel1;
+    }
+
+    public void setPhoneNumberInputPanel1(JPanel phoneNumberInputPanel1) {
+        this.phoneNumberInputPanel1 = phoneNumberInputPanel1;
+    }
+
+    public JLabel getPhoneNumberLabel() {
+        return phoneNumberLabel;
+    }
+
+    public void setPhoneNumberLabel(JLabel phoneNumberLabel) {
+        this.phoneNumberLabel = phoneNumberLabel;
+    }
+
+    public JLabel getPhoneNumberLabel1() {
+        return phoneNumberLabel1;
+    }
+
+    public void setPhoneNumberLabel1(JLabel phoneNumberLabel1) {
+        this.phoneNumberLabel1 = phoneNumberLabel1;
+    }
+
+    public JTextField getPhoneNumberTxtField() {
+        return phoneNumberTxtField;
+    }
+
+    public void setPhoneNumberTxtField(JTextField phoneNumberTxtField) {
+        this.phoneNumberTxtField = phoneNumberTxtField;
+    }
+
+    public JTextField getPhoneNumberTxtField1() {
+        return phoneNumberTxtField1;
+    }
+
+    public void setPhoneNumberTxtField1(JTextField phoneNumberTxtField1) {
+        this.phoneNumberTxtField1 = phoneNumberTxtField1;
+    }
+
+    public JComboBox<String> getPositionComboBox() {
+        return positionComboBox;
+    }
+
+    public void setPositionComboBox(JComboBox<String> positionComboBox) {
+        this.positionComboBox = positionComboBox;
+    }
+
+    public JComboBox<String> getPositionComboBox1() {
+        return positionComboBox1;
+    }
+
+    public void setPositionComboBox1(JComboBox<String> positionComboBox1) {
+        this.positionComboBox1 = positionComboBox1;
+    }
+
+    public JPanel getPositionInputPanel() {
+        return positionInputPanel;
+    }
+
+    public void setPositionInputPanel(JPanel positionInputPanel) {
+        this.positionInputPanel = positionInputPanel;
+    }
+
+    public JPanel getPositionInputPanel1() {
+        return positionInputPanel1;
+    }
+
+    public void setPositionInputPanel1(JPanel positionInputPanel1) {
+        this.positionInputPanel1 = positionInputPanel1;
+    }
+
+    public JLabel getPositionLabel() {
+        return positionLabel;
+    }
+
+    public void setPositionLabel(JLabel positionLabel) {
+        this.positionLabel = positionLabel;
+    }
+
+    public JLabel getPositionLabel1() {
+        return positionLabel1;
+    }
+
+    public void setPositionLabel1(JLabel positionLabel1) {
+        this.positionLabel1 = positionLabel1;
+    }
+
+    public JPanel getSalaryInputPanel() {
+        return salaryInputPanel;
+    }
+
+    public void setSalaryInputPanel(JPanel salaryInputPanel) {
+        this.salaryInputPanel = salaryInputPanel;
+    }
+
+    public JPanel getSalaryInputPanel1() {
+        return salaryInputPanel1;
+    }
+
+    public void setSalaryInputPanel1(JPanel salaryInputPanel1) {
+        this.salaryInputPanel1 = salaryInputPanel1;
+    }
+
+    public JLabel getSalaryLabel() {
+        return salaryLabel;
+    }
+
+    public void setSalaryLabel(JLabel salaryLabel) {
+        this.salaryLabel = salaryLabel;
+    }
+
+    public JLabel getSalaryLabel1() {
+        return salaryLabel1;
+    }
+
+    public void setSalaryLabel1(JLabel salaryLabel1) {
+        this.salaryLabel1 = salaryLabel1;
+    }
+
+    public JFormattedTextField getSalaryTxtField() {
+        return salaryTxtField;
+    }
+
+    public void setSalaryTxtField(JFormattedTextField salaryTxtField) {
+        this.salaryTxtField = salaryTxtField;
+    }
+
+    public JFormattedTextField getSalaryTxtField1() {
+        return salaryTxtField1;
+    }
+
+    public void setSalaryTxtField1(JFormattedTextField salaryTxtField1) {
+        this.salaryTxtField1 = salaryTxtField1;
+    }
+
+    public JLabel getSearchLabel() {
+        return searchLabel;
+    }
+
+    public void setSearchLabel(JLabel searchLabel) {
+        this.searchLabel = searchLabel;
+    }
+
+    public JTextField getSearchTextField() {
+        return searchTextField;
+    }
+
+    public void setSearchTextField(JTextField searchTextField) {
+        this.searchTextField = searchTextField;
+    }
+
+    public JPanel getStartingDateInputPanel() {
+        return startingDateInputPanel;
+    }
+
+    public void setStartingDateInputPanel(JPanel startingDateInputPanel) {
+        this.startingDateInputPanel = startingDateInputPanel;
+    }
+
+    public JPanel getStartingDateInputPanel1() {
+        return startingDateInputPanel1;
+    }
+
+    public void setStartingDateInputPanel1(JPanel startingDateInputPanel1) {
+        this.startingDateInputPanel1 = startingDateInputPanel1;
+    }
+
+    public JLabel getStartingDateLabel() {
+        return startingDateLabel;
+    }
+
+    public void setStartingDateLabel(JLabel startingDateLabel) {
+        this.startingDateLabel = startingDateLabel;
+    }
+
+    public JLabel getStartingDateLabel1() {
+        return startingDateLabel1;
+    }
+
+    public void setStartingDateLabel1(JLabel startingDateLabel1) {
+        this.startingDateLabel1 = startingDateLabel1;
+    }
+
+    public JDateChooser getjDateChooser3() {
+        return jDateChooser3;
+    }
+
+    public void setjDateChooser3(JDateChooser jDateChooser3) {
+        this.jDateChooser3 = jDateChooser3;
+    }
+
+    public JDateChooser getjDateChooser4() {
+        return jDateChooser4;
+    }
+
+    public void setjDateChooser4(JDateChooser jDateChooser4) {
+        this.jDateChooser4 = jDateChooser4;
+    }
+
+    
+
+    public JComboBox<String> getStatusComboBox() {
+        return statusComboBox;
+    }
+
+    public void setStatusComboBox(JComboBox<String> statusComboBox) {
+        this.statusComboBox = statusComboBox;
+    }
+
+    public JComboBox<String> getStatusComboBox1() {
+        return statusComboBox1;
+    }
+
+    public void setStatusComboBox1(JComboBox<String> statusComboBox1) {
+        this.statusComboBox1 = statusComboBox1;
+    }
+
+    public JPanel getStatusInputPanel() {
+        return statusInputPanel;
+    }
+
+    public void setStatusInputPanel(JPanel statusInputPanel) {
+        this.statusInputPanel = statusInputPanel;
+    }
+
+    public JPanel getStatusInputPanel1() {
+        return statusInputPanel1;
+    }
+
+    public void setStatusInputPanel1(JPanel statusInputPanel1) {
+        this.statusInputPanel1 = statusInputPanel1;
+    }
+
+    public JLabel getStatusLabel() {
+        return statusLabel;
+    }
+
+    public void setStatusLabel(JLabel statusLabel) {
+        this.statusLabel = statusLabel;
+    }
+
+    public JLabel getStatusLabel1() {
+        return statusLabel1;
+    }
+
+    public void setStatusLabel1(JLabel statusLabel1) {
+        this.statusLabel1 = statusLabel1;
+    }
+
+    public JButton getUpdateBtn() {
+        return updateBtn;
+    }
+
+    public void setUpdateBtn(JButton updateBtn) {
+        this.updateBtn = updateBtn;
+    }
+
+    public JLabel getUpdateTitleLabel() {
+        return updateTitleLabel;
+    }
+
+    public void setUpdateTitleLabel(JLabel updateTitleLabel) {
+        this.updateTitleLabel = updateTitleLabel;
+    }
+
+    public JPanel getUpdateUserPanel() {
+        return updateUserPanel;
+    }
+
+    public void setUpdateUserPanel(JPanel updateUserPanel) {
+        this.updateUserPanel = updateUserPanel;
+    }
+
+
+    public JLabel getUserAccountLabel() {
+        return userAccountLabel;
+    }
+
+    public void setUserAccountLabel(JLabel userAccountLabel) {
+        this.userAccountLabel = userAccountLabel;
+    }
+
+    public JLabel getUserAccountLabel1() {
+        return userAccountLabel1;
+    }
+
+    public void setUserAccountLabel1(JLabel userAccountLabel1) {
+        this.userAccountLabel1 = userAccountLabel1;
+    }
+
+    public JPanel getUserAccountPanel() {
+        return userAccountPanel;
+    }
+
+    public void setUserAccountPanel(JPanel userAccountPanel) {
+        this.userAccountPanel = userAccountPanel;
+    }
+
+    public JPanel getUserAccountPanel1() {
+        return userAccountPanel1;
+    }
+
+    public void setUserAccountPanel1(JPanel userAccountPanel1) {
+        this.userAccountPanel1 = userAccountPanel1;
+    }
+
+    public JLabel getUserAccountTitleLabel() {
+        return userAccountTitleLabel;
+    }
+
+    public void setUserAccountTitleLabel(JLabel userAccountTitleLabel) {
+        this.userAccountTitleLabel = userAccountTitleLabel;
+    }
+
+    public JLabel getUserAccountTitleLabel1() {
+        return userAccountTitleLabel1;
+    }
+
+    public void setUserAccountTitleLabel1(JLabel userAccountTitleLabel1) {
+        this.userAccountTitleLabel1 = userAccountTitleLabel1;
+    }
+
+    public JTextField getUserAccountTxtField() {
+        return userAccountTxtField;
+    }
+
+    public void setUserAccountTxtField(JTextField userAccountTxtField) {
+        this.userAccountTxtField = userAccountTxtField;
+    }
+
+    public JTextField getUserAccountTxtField1() {
+        return userAccountTxtField1;
+    }
+
+    public void setUserAccountTxtField1(JTextField userAccountTxtField1) {
+        this.userAccountTxtField1 = userAccountTxtField1;
+    }
+
+    public JPanel getUserAcountInputPanel() {
+        return userAcountInputPanel;
+    }
+
+    public void setUserAcountInputPanel(JPanel userAcountInputPanel) {
+        this.userAcountInputPanel = userAcountInputPanel;
+    }
+
+    public JPanel getUserAcountInputPanel1() {
+        return userAcountInputPanel1;
+    }
+
+    public void setUserAcountInputPanel1(JPanel userAcountInputPanel1) {
+        this.userAcountInputPanel1 = userAcountInputPanel1;
+    }
+
+    public JPanel getUserInfoPanel() {
+        return userInfoPanel;
+    }
+
+    public void setUserInfoPanel(JPanel userInfoPanel) {
+        this.userInfoPanel = userInfoPanel;
+    }
+
+    public JPanel getUserInfoPanel1() {
+        return userInfoPanel1;
+    }
+
+    public void setUserInfoPanel1(JPanel userInfoPanel1) {
+        this.userInfoPanel1 = userInfoPanel1;
+    }
+
+    public JLabel getUserInfoTitleLabel() {
+        return userInfoTitleLabel;
+    }
+
+    public void setUserInfoTitleLabel(JLabel userInfoTitleLabel) {
+        this.userInfoTitleLabel = userInfoTitleLabel;
+    }
+
+    public JLabel getUserInfoTitleLabel1() {
+        return userInfoTitleLabel1;
+    }
+
+    public void setUserInfoTitleLabel1(JLabel userInfoTitleLabel1) {
+        this.userInfoTitleLabel1 = userInfoTitleLabel1;
+    }
+
+    public JPanel getUserNameInputPanel() {
+        return userNameInputPanel;
+    }
+
+    public void setUserNameInputPanel(JPanel userNameInputPanel) {
+        this.userNameInputPanel = userNameInputPanel;
+    }
+
+    public JPanel getUserNameInputPanel1() {
+        return userNameInputPanel1;
+    }
+
+    public void setUserNameInputPanel1(JPanel userNameInputPanel1) {
+        this.userNameInputPanel1 = userNameInputPanel1;
+    }
+
+    public JLabel getUserNameLabel() {
+        return userNameLabel;
+    }
+
+    public void setUserNameLabel(JLabel userNameLabel) {
+        this.userNameLabel = userNameLabel;
+    }
+
+    public JLabel getUserNameLabel1() {
+        return userNameLabel1;
+    }
+
+    public void setUserNameLabel1(JLabel userNameLabel1) {
+        this.userNameLabel1 = userNameLabel1;
+    }
+
+    public JTextField getUserNameTxtField() {
+        return userNameTxtField;
+    }
+
+    public void setUserNameTxtField(JTextField userNameTxtField) {
+        this.userNameTxtField = userNameTxtField;
+    }
+
+    public JTextField getUserNameTxtField1() {
+        return userNameTxtField1;
+    }
+
+    public void setUserNameTxtField1(JTextField userNameTxtField1) {
+        this.userNameTxtField1 = userNameTxtField1;
+    }
+
+    public JPasswordField getUserPasswordField() {
+        return userPasswordField;
+    }
+
+    public void setUserPasswordField(JPasswordField userPasswordField) {
+        this.userPasswordField = userPasswordField;
+    }
+
+    public JPasswordField getUserPasswordField1() {
+        return userPasswordField1;
+    }
+
+    public void setUserPasswordField1(JPasswordField userPasswordField1) {
+        this.userPasswordField1 = userPasswordField1;
+    }
+
+    public JLabel getUserPasswordLabel() {
+        return userPasswordLabel;
+    }
+
+    public void setUserPasswordLabel(JLabel userPasswordLabel) {
+        this.userPasswordLabel = userPasswordLabel;
+    }
+
+    public JLabel getUserPasswordLabel1() {
+        return userPasswordLabel1;
+    }
+
+    public void setUserPasswordLabel1(JLabel userPasswordLabel1) {
+        this.userPasswordLabel1 = userPasswordLabel1;
+    }
+
+    public JDateChooser getjDateChooser1() {
+        return jDateChooser1;
+    }
+
+    public void setjDateChooser1(JDateChooser jDateChooser1) {
+        this.jDateChooser1 = jDateChooser1;
+    }
+
+    public JDateChooser getjDateChooser2() {
+        return jDateChooser2;
+    }
+
+    public void setjDateChooser2(JDateChooser jDateChooser2) {
+        this.jDateChooser2 = jDateChooser2;
+    }
+    
+
+    public void showError(String message) {
+        JOptionPane.showMessageDialog(this, message, "Lỗi", JOptionPane.ERROR_MESSAGE);
+    }
+
+    public void showMessage(String message) {
+        JOptionPane.showMessageDialog(this, message, "Thông báo", JOptionPane.INFORMATION_MESSAGE);
+    }
+    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog SuaNhanVienDialog;
+    private javax.swing.JDialog ThemNhanVienDialog;
     private javax.swing.JButton addBtn;
+    private javax.swing.JButton addBtn1;
+    private javax.swing.JPanel addUserPanel;
+    private javax.swing.JPanel birthdateInputPanel;
+    private javax.swing.JPanel birthdateInputPanel1;
+    private javax.swing.JLabel birthdateLabel;
+    private javax.swing.JLabel birthdateLabel1;
     private javax.swing.JPanel bodyPanel;
+    private javax.swing.JPanel btnPanel;
+    private javax.swing.JPanel btnPanel1;
+    private javax.swing.JButton cancelBtn;
+    private javax.swing.JButton cancelBtn1;
     private javax.swing.JLabel countUserLabel;
-    private javax.swing.JButton downloadBtn;
+    private javax.swing.JButton deleteBtn;
+    private javax.swing.JButton editBtn;
+    private javax.swing.JPanel emailInputPanel;
+    private javax.swing.JPanel emailInputPanel1;
+    private javax.swing.JLabel emailLabel;
+    private javax.swing.JLabel emailLabel1;
+    private javax.swing.JTextField emailTxtField;
+    private javax.swing.JTextField emailTxtField1;
     private javax.swing.JPanel functionPanel;
-    private javax.swing.JPanel headerPanel;
-    private javax.swing.JLabel menuIconLabel;
-    private javax.swing.JScrollPane nhanVienScrollPane;
+    private javax.swing.JComboBox<String> genderComboBox;
+    private javax.swing.JComboBox<String> genderComboBox1;
+    private javax.swing.JPanel genderInputPanel;
+    private javax.swing.JPanel genderInputPanel1;
+    private javax.swing.JLabel genderLabel;
+    private javax.swing.JLabel genderLabel1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private com.toedter.calendar.JDateChooser jDateChooser3;
+    private com.toedter.calendar.JDateChooser jDateChooser4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane nhanVienJScrollPane;
     private javax.swing.JTable nhanVienTable;
-    private javax.swing.JButton searchBtn;
+    private javax.swing.JPanel passwordInputPanel;
+    private javax.swing.JPanel passwordInputPanel1;
+    private javax.swing.JPanel phoneNumberInputPanel;
+    private javax.swing.JPanel phoneNumberInputPanel1;
+    private javax.swing.JLabel phoneNumberLabel;
+    private javax.swing.JLabel phoneNumberLabel1;
+    private javax.swing.JTextField phoneNumberTxtField;
+    private javax.swing.JTextField phoneNumberTxtField1;
+    private javax.swing.JComboBox<String> positionComboBox;
+    private javax.swing.JComboBox<String> positionComboBox1;
+    private javax.swing.JPanel positionInputPanel;
+    private javax.swing.JPanel positionInputPanel1;
+    private javax.swing.JLabel positionLabel;
+    private javax.swing.JLabel positionLabel1;
+    private javax.swing.JPanel salaryInputPanel;
+    private javax.swing.JPanel salaryInputPanel1;
+    private javax.swing.JLabel salaryLabel;
+    private javax.swing.JLabel salaryLabel1;
+    private javax.swing.JFormattedTextField salaryTxtField;
+    private javax.swing.JFormattedTextField salaryTxtField1;
+    private javax.swing.JLabel searchLabel;
     private javax.swing.JTextField searchTextField;
-    private javax.swing.JButton uploadBtn;
-    private javax.swing.JPanel userHeaderPanel;
-    private javax.swing.JLabel userIconLabel;
+    private javax.swing.JPanel startingDateInputPanel;
+    private javax.swing.JPanel startingDateInputPanel1;
+    private javax.swing.JLabel startingDateLabel;
+    private javax.swing.JLabel startingDateLabel1;
+    private javax.swing.JComboBox<String> statusComboBox;
+    private javax.swing.JComboBox<String> statusComboBox1;
+    private javax.swing.JPanel statusInputPanel;
+    private javax.swing.JPanel statusInputPanel1;
+    private javax.swing.JLabel statusLabel;
+    private javax.swing.JLabel statusLabel1;
+    private javax.swing.JButton updateBtn;
+    private javax.swing.JLabel updateTitleLabel;
+    private javax.swing.JPanel updateUserPanel;
+    private javax.swing.JLabel userAccountLabel;
+    private javax.swing.JLabel userAccountLabel1;
+    private javax.swing.JPanel userAccountPanel;
+    private javax.swing.JPanel userAccountPanel1;
+    private javax.swing.JLabel userAccountTitleLabel;
+    private javax.swing.JLabel userAccountTitleLabel1;
+    private javax.swing.JTextField userAccountTxtField;
+    private javax.swing.JTextField userAccountTxtField1;
+    private javax.swing.JPanel userAcountInputPanel;
+    private javax.swing.JPanel userAcountInputPanel1;
+    private javax.swing.JPanel userInfoPanel;
+    private javax.swing.JPanel userInfoPanel1;
+    private javax.swing.JLabel userInfoTitleLabel;
+    private javax.swing.JLabel userInfoTitleLabel1;
+    private javax.swing.JPanel userNameInputPanel;
+    private javax.swing.JPanel userNameInputPanel1;
     private javax.swing.JLabel userNameLabel;
+    private javax.swing.JLabel userNameLabel1;
+    private javax.swing.JTextField userNameTxtField;
+    private javax.swing.JTextField userNameTxtField1;
+    private javax.swing.JPasswordField userPasswordField;
+    private javax.swing.JPasswordField userPasswordField1;
+    private javax.swing.JLabel userPasswordLabel;
+    private javax.swing.JLabel userPasswordLabel1;
     // End of variables declaration//GEN-END:variables
 }

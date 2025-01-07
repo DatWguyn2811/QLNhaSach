@@ -27,6 +27,16 @@ public class NhanVien {
 
     public NhanVien() {}
 
+    public NhanVien(int maNhanVien, String tenNhanVien, String gioiTinh, String ngaySinh, String soDienThoai, String email, int luong) {
+        this.maNhanVien = maNhanVien;
+        this.tenNhanVien = tenNhanVien;
+        this.gioiTinh = gioiTinh;
+        this.ngaySinh = ngaySinh;
+        this.soDienThoai = soDienThoai;
+        this.email = email;
+        this.luong = luong;
+    }
+    
     public NhanVien(int maNhanVien, String tenNhanVien, String gioiTinh, String ngaySinh, String soDienThoai, String email, int luong, int trangThai, String ngayVaoLam, String tenDangNhap, String matkhau, String vaiTro, int maQuyen) {
         this.maNhanVien = maNhanVien;
         this.tenNhanVien = tenNhanVien;

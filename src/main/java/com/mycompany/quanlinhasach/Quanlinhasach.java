@@ -4,13 +4,16 @@
 
 package com.mycompany.quanlinhasach;
 
+import com.mycompany.quanlinhasach.controller.SachController;
+import com.mycompany.quanlinhasach.dao.SachDAO;
 import com.mycompany.quanlinhasach.view.BanHang;
+import com.mycompany.quanlinhasach.view.DangNhap;
 import com.mycompany.quanlinhasach.view.DauSach;
 import com.mycompany.quanlinhasach.view.DauSach;
-import com.mycompany.quanlinhasach.view.SanPham;
 import com.mycompany.quanlinhasach.view.SanPham;
 import java.awt.Font;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
@@ -53,13 +56,13 @@ public class Quanlinhasach {
         // Tạo JFrame chính
         JFrame frame = new JFrame("Quản Lý Nhà Sách");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1080, 723);
+        frame.setSize(1080, 730);
 
-        // Thêm JPanel vào JFrame
-        JPanel panel = new BanHang(); // Giả sử SanPham là một JPanel tùy chỉnh
-        frame.setContentPane(panel);
+        // Tạo và hiển thị giao diện đăng nhập
+        DangNhap dangNhapFrame = new DangNhap();
+        frame.setContentPane(dangNhapFrame);
 
-        // Hiển thị giao diện
+        // Hiển thị giao diện đăng nhập
         frame.setVisible(true);
     }
 

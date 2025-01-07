@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -19,7 +20,7 @@ public class JDBCUtil {
         
         try {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            String url = "jdbc:mysql://localhost:3306/quanlynhasach";
+            String url = "jdbc:mysql://localhost:3306/quanlynhasach?useUnicode=true&characterEncoding=UTF-8";
             String username = "root";
             String password = "";
             

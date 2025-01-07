@@ -4,6 +4,7 @@
  */
 package com.mycompany.quanlinhasach.dao;
 
+import com.mycompany.quanlinhasach.database.JDBCUtil;
 import com.mycompany.quanlinhasach.model.NhaXuatBan;
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,6 +32,29 @@ public class NhaXuatBanDAO {
         }
         return nhaXuatBans;
     }
+    public static int layMaNhaXuatBan(String tenNXB) {
+    int maNhaXuatBan = -1; // Giả sử giá trị -1 là không tìm thấy
+
+    try (Connection conn = JDBCUtil.getConnection()) {
+        String query = "SELECT MaNhaXuatBan FROM NXB WHERE TenNhaXuatBan = ?";
+        PreparedStatement stmt = conn.prepareStatement(query);
+        stmt.setString(1,tenNXB);
+        ResultSet rs = stmt.executeQuery();
+
+        // Kiểm tra kết quả truy vấn
+        if (rs.next()) {
+            maNhaXuatBan = rs.getInt("MaNhaXuatBan");
+            System.out.println("Mã nhà xuất bản tìm thấy: " + maNhaXuatBan);
+        } else {
+            System.out.println("Không tìm thấy mã nhà xuất bản cho: " + tenNXB);
+        }
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+
+    return maNhaXuatBan;
+}
+
 }
 
 
